@@ -1,25 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import {Nav, Container, Navbar , Button} from 'react-bootstrap'
+import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom';
+import { useEffect, useState } from 'react';
+
 
 function App() {
+
+  let navigate = useNavigate();
+  let image = [{id : 1},{id : 1},{id : 1}]
+
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Navbar  bg="light" className="navbar-fnt fixed-top d-inline">
+        <div className="top-part">
+          <Navbar.Brand href="#home"><h3>GOLF U</h3></Navbar.Brand>
+        </div>
+       <Container>
+         <Nav className="d-flex">
+            <Nav.Link  onClick={()=>{navigate('/ ')}}>홈</Nav.Link>
+            <Nav.Link  onClick={()=>{navigate('/screen')}}>스크린</Nav.Link>
+            <Nav.Link  onClick={()=>{navigate('/field')}}>필드</Nav.Link>
+            <Nav.Link  onClick={()=>{navigate('/reservation')}}>예약</Nav.Link>
+            <Nav.Link onClick={()=>{navigate('/media')}}>미디어</Nav.Link>
+            <Button variant="success" className="btn-op" onClick={()=>{navigate('/login/screen')}}>스크린 로그인</Button>
+          </Nav>
+        </Container>
+      </Navbar>
+      <div className="main-bg">
+        {
+          image.map((a,i)=>{
+            return(
+              <div className={"main-img"+[i+1]+""}>
+                <img src={"img/gollf"+[i+1]+"(1920x500).jpg"} alt=""/>
+              </div>
+            )
+          })
+        }
+      </div>
+   </div>
+    );
 }
+
+
 
 export default App;
