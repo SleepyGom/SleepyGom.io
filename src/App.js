@@ -1,13 +1,12 @@
 import './App.css';
 import {Nav, Container, Navbar , Button} from 'react-bootstrap'
 import {Routes, Route, Link, useNavigate, Outlet} from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState ,useRef } from 'react';
 
 
 function App() {
 
   let navigate = useNavigate();
-  let image = [{id : 1},{id : 1},{id : 1}]
 
 
   
