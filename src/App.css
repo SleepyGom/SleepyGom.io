@@ -1,7 +1,19 @@
+ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+.font {
+  color :rgb(4, 76, 17);
+  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
+  font-weight : bold;
+}
+
 .App {
+  width:auto;
   text-align: center;
-  overflow-x : hidden;
-  overflow-y : auto;
+  
 }
 
 .navbar-fnt a{
@@ -32,35 +44,47 @@
   justify-content: center;
 }
 
-.first-page{
-  background-color:white;
-  width:100%;
-  height:100vh;
-  display:flex;
-  flex-flow : row wrap;
-  justify-content: space-evenly;
-  align-items : center;
-  border:10px solid rgb(6, 105, 22);
-  overflow: hidden;
-}
-
-.first-page > h1 {
-  color:rgb(6, 105, 22);
-  font-size:60px;
-}
-
 .slideBg{
   display:block;
   width:100%;
   height:500px;
   background-color:black;
-  position:relative;
+  margin-top:10px;
+  overflow:hidden;
+  margin-bottom : 20px;
 }
 
+.slideBg li{
+  max-width:100%;
+  max-height:100%;
+}
 
-.trans{
-  transform:translateX(0);
-  visibility : visible !important;
+.slideBg > ul{
+  display:flex;
+  flex-flow : row nowrap;
+  transition : all 1.5s;
+}
+
+.wrapSlide{
+  transform : translateX(0);
+}
+
+.user-info{
+  max-width : 100%;
+  max-height: 400px;
+  display :flex;
+  justify-content: space-evenly;
+  flex-flow : row nowrap;
+  margin : 20px 0 20px 0;
+
+}
+
+.userscore{
+  width: 200px;
+  height: 200px;
+  border-radius : 20px;
+  border : 2px solid #198754;
+
 }
 
 .nav_color{
@@ -75,11 +99,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-.bg-container{
-  width:100%;
-  height:500px;
-  overflow:hidden;
 }
 
 .App-header {
