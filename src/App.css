@@ -4,6 +4,125 @@ ul{
   padding:0;
 }
 
+.f_color{
+color: rgb(77, 76, 76);
+}
+
+a{
+  text-decoration: none;
+  color: black !important;
+}
+
+h5{
+  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
+}
+
+h3{
+  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
+}
+
+p{
+  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
+}
+
+input{
+  width: 400px;
+  height:40px;
+  font-size:22px;
+  border:2px solid #8d8b8b;
+  border-radius : 5px;
+}
+
+input[type=checkbox]{
+  width:15px;
+  height:15px;
+}
+
+.login{
+  display: flex;
+  width:100%;
+  height:500px;
+  text-align :center;
+  justify-content: center !important;
+  align-items: center;
+
+}
+
+.login > h5{
+  color :#076a35;
+}
+
+.login_p{
+  
+  width:400px;
+  height:200px;
+  border-radius : 8px;
+  background-color: #fff;
+}
+
+.login_input{
+  margin-top: 40px;
+}
+
+.remember_id{
+  display:flex;
+  justify-content: flex-start;
+  
+}
+
+.remember_id > input {
+  margin : 5px 0 0 5px;
+}
+
+.remember_id > p{
+  font-size: 15px;
+  font-weight:500;
+}
+
+.login-button{
+  width:400px;
+  height:50px;
+}
+
+.login_nav{
+  display: flex;
+  font-size: 12px;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+.login_nav > a{
+  margin : 3px 8px 0 0 ;
+}
+
+.sign_in{
+  display: inline-block;
+  width:100%;
+  height:500px;
+  text-align :center;
+  margin:0 auto;
+}
+
+.sign_info{
+  display:inline-block;
+  width: 400px ;
+  height: 500px;
+  padding-top:50px;
+}
+
+.sign_info > p{
+  margin-top:20px;
+  text-align : left !important; 
+}
+
+.box{
+  width:150px;
+  height:150px;
+  background-color:#61dafb;
+  border-radius : 8px;
+  margin : 20px;
+}
+
 .font {
   color :rgb(4, 76, 17);
   font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
@@ -73,19 +192,49 @@ ul{
   max-width : 100%;
   max-height: 400px;
   display :flex;
-  justify-content: space-evenly;
   flex-flow : row nowrap;
   margin : 20px 0 20px 0;
+  overflow-X : scroll;
+}
+
+.user-info::-webkit-scrollbar{
+  display:none;
+}
+
+.n_wrap{
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+.weather{
+  margin : 20px 20px 20px 200px !important;
+}
+
+.weather > p{
+  margin : 0 auto;
+}
+
+.last-game {
+  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
 
 }
 
-.userscore{
-  width: 200px;
-  height: 200px;
-  border-radius : 20px;
-  border : 2px solid #198754;
-
+.last-game h5{
+  float:left;
+  margin : 10px 0 0 5px;
 }
+
+.last-game h2{
+  float:right;
+  margin-top:50px;
+}
+
+.last-game p{
+  float:left;
+  margin : 80px 0 0 5px;
+}
+
+
 
 .nav_color{
   background-color:rgb(4, 76, 17);

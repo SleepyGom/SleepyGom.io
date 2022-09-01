@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter , Routes , Route} from 'react-router-dom';
+import Login from './login/login.js';
+import {Signin , Date} from './login/signin.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-    <App />
+    <Routes>
+        <Route path='/' element={<App />}/>
+        <Route path ='login' element={<Login />}/>
+        <Route path ='signup' element={<Signin/>}/>
+    </Routes>
     </BrowserRouter>
 );
 
