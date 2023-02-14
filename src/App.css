@@ -1,3 +1,4 @@
+/*public*/
 ul{
   list-style: none;
   margin: 0;
@@ -14,7 +15,7 @@ a{
 }
 
 h5{
-  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
+  font-family :'NanumSquareRound';
 }
 
 h3{
@@ -26,9 +27,9 @@ p{
 }
 
 input{
-  width: 400px;
+  width: 350px;
   height:40px;
-  font-size:22px;
+  font-size:16px;
   border:2px solid #8d8b8b;
   border-radius : 5px;
 }
@@ -38,6 +39,26 @@ input[type=checkbox]{
   height:15px;
 }
 
+.box{
+  width:300px;
+  height:300px;
+  background-color:#61dafb;
+  border-radius : 8px;
+  margin : 20px;
+}
+
+.font {
+  color :rgb(4, 76, 17);
+  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
+  font-weight : bold;
+}
+
+.k_font{
+  font-family : 'NanumSquareRound' !important;
+}
+
+
+/*login.js*/
 .login{
   display: flex;
   width:100%;
@@ -94,41 +115,98 @@ input[type=checkbox]{
 .login_nav > a{
   margin : 3px 8px 0 0 ;
 }
-
-.sign_in{
-  display: inline-block;
+/*singin.js*/
+.sign-in{
   width:100%;
-  height:500px;
-  text-align :center;
-  margin:0 auto;
+  height:100vh;
+  background-color:#4bbe70;
+  position : relative;
 }
 
-.sign_info{
+.formbox{
+  width:400px;
+  height:600px;
+  background-color:#fff;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px 1px #909090;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50%,-50%);
+}
+
+.sign-logo{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin : 15px 0 0 25px
+}
+
+.boxAlign:first-child{
+  margin : 15px 0 0 25px;
+}
+
+.boxAlign:nth-child(3){
+  margin : 5px 0 15px 25px;
+}
+
+
+.boxAlign{
+  margin : 5px 0 0 25px;
+}
+
+
+.boxAlign p{
+  font-size:15px;
+  margin : 0 5px 2px 0;
   display:inline-block;
-  width: 400px ;
-  height: 500px;
-  padding-top:50px;
 }
 
-.sign_info > p{
-  margin-top:20px;
-  text-align : left !important; 
+.boxAlign span{
+  color:red;
 }
 
-.box{
-  width:150px;
-  height:150px;
-  background-color:#61dafb;
-  border-radius : 8px;
-  margin : 20px;
+.nameWarn{
+  font-size:10px !important;
+  color:red;
+  font-family: 'NanumSquareRound';
+  margin:5px 0 0 0;
+  visibility: hidden;
+  transition: all .2s;
+  opacity:0;
 }
 
-.font {
-  color :rgb(4, 76, 17);
-  font-family :Impact, Haettenschweiler, 'NanumSquareRound', sans-serif;
-  font-weight : bold;
+.passwordWarn{
+  font-size:10px !important;
+  color:red;
+  font-family: 'NanumSquareRound';
+  visibility: hidden;
+  transition: all .2s;
+  opacity:0;
+
 }
 
+.passwordConfirmWarn{
+  font-size:10px !important;
+  color:red;
+  font-family: 'NanumSquareRound';
+  visibility: hidden;
+  transition: all .2s;
+  opacity:0;
+
+}
+
+.phoneNumberWarn{
+  font-size:10px !important;
+  color:red;
+  font-family: 'NanumSquareRound';
+  visibility: hidden;
+  transition: all .2s;
+  opacity:0;
+
+}
+
+/*APP.js*/
 .App {
   width:auto;
   text-align: center;
@@ -146,9 +224,13 @@ input[type=checkbox]{
 }
 
 .top-part{
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  display:inline-block;
+  margin-top:20px;
+  background-color: white;
+}
+
+.top-part > a > h3{
+  margin:0 auto !important;
 }
 
 .navbar > .container{
@@ -162,15 +244,15 @@ input[type=checkbox]{
 .d-flex{
   justify-content: center;
 }
-
+/*slide.js*/
 .slideBg{
   display:block;
   width:100%;
   height:500px;
-  background-color:black;
   margin-top:10px;
   overflow:hidden;
   margin-bottom : 20px;
+
 }
 
 .slideBg li{
@@ -184,17 +266,25 @@ input[type=checkbox]{
   transition : all 1.5s;
 }
 
+
 .wrapSlide{
   transform : translateX(0);
 }
 
+.popular_f{
+  margin : 0 auto;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
 .user-info{
   max-width : 100%;
-  max-height: 400px;
+  max-height: 300px;
   display :flex;
   flex-flow : row nowrap;
   margin : 20px 0 20px 0;
   overflow-X : scroll;
+  overflow-y : hidden;
 }
 
 .user-info::-webkit-scrollbar{
@@ -204,14 +294,84 @@ input[type=checkbox]{
 .n_wrap{
   display:flex;
   flex-flow: row nowrap;
+  align-items : center;
 }
 
-.weather{
-  margin : 20px 20px 20px 200px !important;
+.rating_logo{
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.weather > p{
-  margin : 0 auto;
+.rating_logo > h5{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.rating_logo > h5 > span{
+  font-size : 50px;
+  font-weight : bold;
+}
+
+/*ranking*/
+.ranking{
+  display:flex;
+  flex-flow : row nowrap;
+}
+
+.back_side{
+  width:300px;
+  height:300px;
+  background-color:black;
+  opacity: 0;
+  border-radius : 8px;
+  transition: opacity .3s;
+  visibility: hidden;
+}
+
+.ranking > li{
+  position: relative !important;
+}
+
+.ranking > li > h3{
+  position : absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50%,-50%);
+  color:white;
+  visibility : hidden;
+  opacity : 0;
+  transition : all .3s;
+  font-size : 40px;
+  width: 100%;
+}
+
+.ranking > li > h2{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform : translate(-50% , -50%);
+  color : white !important;
+  opacity : 0;
+  visibility : hidden;
+  transition : all .3s;
+}
+
+.ranking > li:hover > h3{
+  visibility :visible;
+  opacity : 1;
+}
+
+.ranking > li:hover > .back_side{
+  opacity : .3;
+  visibility : visible;
+}
+
+.ranking > li:hover > h2{
+  opacity : 1;
+  visibility : visible;
 }
 
 .last-game {
@@ -232,6 +392,15 @@ input[type=checkbox]{
 .last-game p{
   float:left;
   margin : 80px 0 0 5px;
+}
+
+/*Weather.js*/
+.weather{
+  margin : 20px 20px 20px 200px !important;
+}
+
+.weather > p{
+  margin : 0 auto;
 }
 
 
