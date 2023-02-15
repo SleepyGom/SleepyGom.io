@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.baa833b8.css",
-    "main.js": "/static/js/main.f1c73197.js",
-    "static/js/787.c83b8b47.chunk.js": "/static/js/787.c83b8b47.chunk.js",
-    "index.html": "/index.html",
-    "main.baa833b8.css.map": "/static/css/main.baa833b8.css.map",
-    "main.f1c73197.js.map": "/static/js/main.f1c73197.js.map",
-    "787.c83b8b47.chunk.js.map": "/static/js/787.c83b8b47.chunk.js.map"
+    "main.css": "/SleepyGom/SleepyGom.io.git/static/css/main.baa833b8.css",
+    "main.js": "/SleepyGom/SleepyGom.io.git/static/js/main.33b4ff60.js",
+    "static/js/787.c83b8b47.chunk.js": "/SleepyGom/SleepyGom.io.git/static/js/787.c83b8b47.chunk.js",
+    "index.html": "/SleepyGom/SleepyGom.io.git/index.html",
+    "main.baa833b8.css.map": "/SleepyGom/SleepyGom.io.git/static/css/main.baa833b8.css.map",
+    "main.33b4ff60.js.map": "/SleepyGom/SleepyGom.io.git/static/js/main.33b4ff60.js.map",
+    "787.c83b8b47.chunk.js.map": "/SleepyGom/SleepyGom.io.git/static/js/787.c83b8b47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baa833b8.css",
-    "static/js/main.f1c73197.js"
+    "static/js/main.33b4ff60.js"
   ]
 }
