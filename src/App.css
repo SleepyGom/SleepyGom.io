@@ -38,6 +38,9 @@ input[type=checkbox]{
   width:15px;
   height:15px;
 }
+.APP::-webkit-scrollbar{
+  display:none;
+}
 
 .box{
   width:300px;
